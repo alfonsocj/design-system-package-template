@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "@babel/preset-typescript",
+    "@babel/preset-react",
+    "@babel/preset-env",
+    ["minify", {"keepFnName": true}]
+  ],
+  "plugins": [
+    ["transform-rename-import", { "original": "^(.+?)\\.scss$", "replacement": "$1.css" }]
+  ]
+}
